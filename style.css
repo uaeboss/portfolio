@@ -2,7 +2,6 @@
   font-family: "Poppins";
   src: url("assets/Poppins-Black.ttf");
 }
-/* styles */
 header {
   display: flex;
   align-items: center;
@@ -34,6 +33,10 @@ h1 {
 a {
   text-decoration: none;
   color: white;
+  margin-left: 2rem;
+}
+a:hover {
+  color: #282c47;
 }
 
 img {
