@@ -43,3 +43,24 @@ img
     position: absolute
     top: 0
     z-index: -10
+
+.container 
+    display: grid
+    height: 100vh
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 0.2fr 2.5fr 0.3fr
+    gap: 0px 0px
+    grid-auto-flow: row
+    grid-template-areas: "header header header" "content content content" "contact contact contact"
+
+.header
+    grid-area: header
+    border: 2px solid white
+
+.content
+    grid-area: content
+    border: 2px solid white
+
+.contact
+    grid-area: contact
+    border: 2px solid white
