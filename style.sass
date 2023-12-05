@@ -1,8 +1,9 @@
 @import "variables"
+@import "mixins"
     
 @font-face
-    font-family: "Poppins"
-    src: url("assets/Poppins-Black.ttf")
+    font-family: "Oswald"
+    src: url("assets/Oswald-Regular.ttf")
 
 header
     display: flex
@@ -16,7 +17,7 @@ header
     box-sizing: border-box
 
 body
-    font-family: "Poppins"
+    font-family: "Oswald"
     background-color: #181818
 
 ul
@@ -30,15 +31,14 @@ h1
 
 a
     text-decoration: none
-    color: white
-    margin-left: 2rem
-    &:hover
-        color: #282c47
+    cursor: pointer
 
 .container 
     display: grid
     width: 100vw
     height: 100vh
+    letter-spacing: 1rem
+    filter: grayscale(50%)
     background-image: url("assets/background_mountain.jpg")
     background-repeat: no-repeat
     background-size: cover
@@ -50,17 +50,37 @@ a
 
 .projects
     grid-area: projects
-    border: 2px solid black
+    @include flex-center
+    font-size: 4rem
+
+.link-projects
+    text-shadow: 0 0 10px #d5d3d3
+    @include scale-up
 
 .about
     grid-area: about
-    border: 2px solid black
+    writing-mode: vertical-rl
+    font-size: 4rem
+    @include flex-center
+
+.link-about
+    text-shadow: 0 0 7px #d5d3d3
+    @include scale-up
 
 .contact
     grid-area: contact
-    border: 2px solid black
+    font-size: 4rem
+    @include flex-center
 
+.link-contact
+    inline-size: fit-content
+    transform: rotate(-90deg)
+    @include scale-up
 
 .news 
     grid-area: news
-    border: 2px solid black
+    @include flex-center
+    font-size: 4rem
+
+.link-news
+    @include scale-up
