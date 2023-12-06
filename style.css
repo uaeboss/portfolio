@@ -42,7 +42,7 @@ a {
   height: 100vh;
   letter-spacing: 1rem;
   filter: grayscale(50%);
-  background-image: url("assets/background_mountain.jpg");
+  background-image: url("assets/nodes.gif");
   background-repeat: no-repeat;
   background-size: cover;
   grid-template-columns: 150px 1fr 150px;
